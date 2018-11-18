@@ -14,9 +14,9 @@ source:
   sha256: 01fd9d2149204090e1280b12b39fb94ef9d54470d9c70177bb6c9087ac87d8c3
 
 build:
+  noarch: generic
   merge_build_host: True  # [win]
-  number: 0
-  skip: true  # [win32]
+  number: 1000
   rpaths:
     - lib/R/lib/
     - lib/
@@ -40,8 +40,7 @@ about:
   summary: Really Poor Man's Graphical User Interface, used to create interactive R analysis
     sessions with simple R commands.
   license_family: GPL3
-  license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3'  # [unix]
-  license_file: '{{ environ["PREFIX"] }}\R\share\licenses\GPL-3'  # [win]
+  license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3'
 
 extra:
   recipe-maintainers:
