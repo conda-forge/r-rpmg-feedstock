@@ -35,12 +35,12 @@ test:
 
 about:
   home: https://CRAN.R-project.org/package=RPMG
-  license: GPL-2
+  license: GPL-2.0-or-later
   summary: Really Poor Man's Graphical User Interface, used to create interactive R analysis
     sessions with simple R commands.
   license_family: GPL2
   license_file:
-    - '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2'
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2
 
 extra:
   recipe-maintainers:
