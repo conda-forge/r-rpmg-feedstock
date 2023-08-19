@@ -1,4 +1,4 @@
-{% set version = "2.2-6" %}
+{% set version = "2.2-7" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/RPMG_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/RPMG/RPMG_{{ version }}.tar.gz
-  sha256: 1650e3a90b6c3b8e0023b11791bfb446d39d6e10408a1e0216951d36754ac319
+  sha256: c413de3c126bc377fe31a948887d27f404a9637c57fe0e07b087d5509cb99f11
 
 build:
   merge_build_host: true  # [win]
